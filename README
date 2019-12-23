@@ -11,13 +11,13 @@ web: https://darksky.net/dev
 Need to Log In with an account.
 
 When access to your account will see a key like this:
-bf8714f355c2f58ac2d9613b8102a05c
+bf8714f35....
 
 With that key you will be able to make 1000 requests every single day.
 
 API call example:
 -----------------
-https://api.darksky.net/forecast/bf8714f355c2f58ac2d9613b8102a05c/37.8267,-122.4233
+https://api.darksky.net/forecast/bf8714f35..../37.8267,-122.4233
 
 For coordinates locations (geocoding API) we use Map Box:
 https://docs.mapbox.com/api/search/#geocoding
