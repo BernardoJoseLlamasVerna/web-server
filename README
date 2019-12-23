@@ -1,0 +1,29 @@
+My first asynchronous non-blocking nodeJS application.
+
+It's non-blocking because it's going to be able to do other things while it's waiting for some long running I/O process.
+
+This app interacts with real time weather APIs. For this reason ir requires asynchronous HTTP Requests.
+
+Dark Sky Net: weather api
+-------------
+
+web: https://darksky.net/dev
+Need to Log In with an account.
+
+When access to your account will see a key like this:
+bf8714f355c2f58ac2d9613b8102a05c
+
+With that key you will be able to make 1000 requests every single day.
+
+API call example:
+-----------------
+https://api.darksky.net/forecast/bf8714f355c2f58ac2d9613b8102a05c/37.8267,-122.4233
+
+For coordinates locations (geocoding API) we use Map Box:
+https://docs.mapbox.com/api/search/#geocoding
+
+geocode and forecast are two I/O operations that are operating independently of the other...with callback chaining pattern we are going to be able to do one thing, the the next (to geocode and then address).
+
+
+
+
